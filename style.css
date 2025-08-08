@@ -1,0 +1,24 @@
+.header_div{
+    background-color: rgb(24, 24, 24);
+    width: 100vw;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+    position: relative;
+}
+
+.header_div span{
+    color: white;
+    font-family: "Open Sans", sans-serif;
+}
+
+.os_guri{
+    background-image: url(img/fundo.png);
+    background-position: -10em -10em;
+    margin-top: -19px;
+    position: relative;
+    height: 90vh;
+    width: 50vw;
+}
