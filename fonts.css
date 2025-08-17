@@ -110,8 +110,9 @@
 .black-ops-one-regular {
   font-family: "Black Ops One", system-ui;
   font-size: 79px;
-  padding-top: 0.7em;
+  padding-top: 0em;
   color: rgb(27, 210, 97);
+  margin-bottom: -0.3em;
 }
 
 

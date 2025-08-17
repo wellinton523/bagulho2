@@ -22,34 +22,53 @@ header>.container-divisor {
 
 .os_guri{
     background-image: url(img/fundo.png);
-    background-position: -10em -1em;
-    margin-top: -3em;
+    background-position: -9em -0.8em;
+    background-size: 330%;
+    margin-top: -2em;
     position: relative;
-    height: calc(100vh + 40px);
+    height:  calc(140vh + 1em);
     width: 50vw;
 }
 
 .vidro{
     background-image: url(img/vidro_quebrado.png);
     position: relative;
+    display: flex;
     background-position: -20em -8em;
     height: 90vh;
     width: 50vw;
+    align-content: center;
 }
 
 .tinta{
+    position: relative;
     background-image: url(img/tinta.png);
-    transform:translateY( 9em);
-    height: 50vh;
-    width: 50vw;
+    display: flex;
+    background-position: -3em 0em;
+    flex-direction: column;
     justify-content: center;
-    justify-items: center;
+    justify-self: center;
+    margin: auto;
+    height: 30vh;
+    width: 53vw;
+    text-wrap: balance;
 }
+
+.tinta span, p{
+    text-align: center;
+}
+
+.texts span{
+    text-align:  justify;
+}
+
 .sobre_nos{
     background-color: white;
-    margin-top: -19px;
+    margin-top: -2em;
+    padding-top: 3em;
+    padding-right: 3em;
     position: relative;
-    height:  calc(100vh + 40px);
+    height:  calc(140vh + 1em);
     width: 50vw;
     box-shadow: 0px 0px 10px black;
 }
@@ -62,12 +81,12 @@ article{
 .grunge-divider {
     flex-grow: 1;
     width: 100px;
-    height: calc(100% + 26px);
+    height: calc(100%);
     background-image: url(img/image.png);
     z-index: 2;
     position: absolute;
     overflow: hidden;
-    margin-top: -26px;
+    margin-top: -3em;
     right: 100%;
 }
 
@@ -90,9 +109,10 @@ article{
   height: 4em;
   width: 20em;
   box-shadow: 5px 5px 0 black;
+  margin-top: -1.5em;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 660px) {
     article{
         flex-direction: column;
     }
@@ -102,6 +122,7 @@ article{
     }
     .os_guri{
         width: 100%;
+        height: calc(80vh + 0px);
     }
     .vidro{
         width: 100%;
@@ -109,14 +130,14 @@ article{
     }
     .tinta{
         width: 100%;
-        justify-content: center;
-        background-position: -5vw;
+        height: 40%;
     }
     .sobre_nos{
         width: 100%;
         display: flex;
         flex-direction: column;
         height:  calc(100vh + 100vh + 40px);
+        padding-left: 3em;
     }
     .grunge-divider {
         visibility: hidden;
@@ -124,17 +145,44 @@ article{
     .grunge-divider2 {
         background-image: url(img/grunge-divider-3\ \(2\).png);
         background-position: 0 -50px;
-        margin-top: -8px;
-        width: 100%;
-        height: 10%;
+        position: absolute;
+        margin-top: -4em;
+        margin-left: -5em;
+        width: 110vw;
+        height: 20px;
     }
 
     .giga{
         border-radius: 0;
+        height: 200px;
+        width: 200px;
+    }
+    .personas{
+    justify-content: centeR;
     }
     .texts{
         display: flex;
         justify-content: space-around;
+        flex-direction: column;
+        
+    }
+
+    .texts span, h2, strong{
+        text-align: center;
+    }
+
+    .texts h2{
+        font-size: 150%;
+    }
+
+    .texts span{
+        font-size: 140%;
+    }
+
+    .texts strong{
+        font-size: 140%;
+        padding-left: 2em;
+        padding-right: 2em;
     }
 
 }
